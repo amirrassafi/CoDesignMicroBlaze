@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Jan 11 03:06:58 2017
+# Process ID: 5076
+# Current directory: D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/design_1_microblaze_0_0_synth_1
+# Command line: vivado.exe -log design_1_microblaze_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_microblaze_0_0.tcl
+# Log file: D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.vds
+# Journal file: D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/design_1_microblaze_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_microblaze_0_0.tcl -notrace
