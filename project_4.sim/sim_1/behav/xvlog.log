@@ -1,10 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_1_xbar_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_lmb_bram_1/sim/design_1_lmb_bram_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_auto_pc_0_1/sim/design_1_auto_pc_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_auto_pc_1_1/sim/design_1_auto_pc_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_1_auto_pc_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
