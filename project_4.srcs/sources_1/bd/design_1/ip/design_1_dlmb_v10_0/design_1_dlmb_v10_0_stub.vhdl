@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
--- Date        : Wed Jan 11 03:08:46 2017
+-- Date        : Wed Jan 11 03:08:44 2017
 -- Host        : amir running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_dlmb_v10_0 -prefix
+--               design_1_dlmb_v10_0_ design_1_dlmb_v10_0_stub.vhdl
 -- Design      : design_1_dlmb_v10_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

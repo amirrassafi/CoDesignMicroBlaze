@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
---Date        : Wed Jan 11 03:14:57 2017
+--Date        : Wed Jan 11 03:33:43 2017
 --Host        : amir running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2373,6 +2373,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
+    CLK : in STD_LOGIC;
     Camera : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Cooler : out STD_LOGIC;
     Heater : out STD_LOGIC;
@@ -2382,16 +2383,13 @@ entity design_1 is
     Temp0 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Temp1 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Temp2 : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    diff_clock_rtl_clk_n : in STD_LOGIC;
-    diff_clock_rtl_clk_p : in STD_LOGIC;
     interrupt : out STD_LOGIC;
-    reset_rtl : in STD_LOGIC;
     reset_rtl_0 : in STD_LOGIC;
     uart_rtl_rxd : in STD_LOGIC;
     uart_rtl_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=24,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=23,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -2577,15 +2575,6 @@ architecture STRUCTURE of design_1 is
     Dbg_Disable_0 : out STD_LOGIC
   );
   end component design_1_mdm_1_0;
-  component design_1_clk_wiz_1_0 is
-  port (
-    clk_in1_p : in STD_LOGIC;
-    clk_in1_n : in STD_LOGIC;
-    reset : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC
-  );
-  end component design_1_clk_wiz_1_0;
   component design_1_rst_clk_wiz_1_100M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -2676,9 +2665,6 @@ architecture STRUCTURE of design_1 is
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal axi_uartlite_0_interrupt : STD_LOGIC;
-  signal clk_wiz_1_locked : STD_LOGIC;
-  signal diff_clock_rtl_1_CLK_N : STD_LOGIC;
-  signal diff_clock_rtl_1_CLK_P : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
   signal microblaze_0_M_AXI_DC_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -2834,7 +2820,6 @@ architecture STRUCTURE of design_1 is
   signal microblaze_0_interrupt_INTERRUPT : STD_LOGIC;
   signal microblaze_0_intr : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal reset_rtl_0_1 : STD_LOGIC;
-  signal reset_rtl_1 : STD_LOGIC;
   signal rst_clk_wiz_1_100M_bus_struct_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_1_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_1_100M_mb_reset : STD_LOGIC;
@@ -2873,11 +2858,9 @@ begin
   Temp1_1(7 downto 0) <= Temp1(7 downto 0);
   Temp2_1(7 downto 0) <= Temp2(7 downto 0);
   axi_uartlite_0_UART_RxD <= uart_rtl_rxd;
-  diff_clock_rtl_1_CLK_N <= diff_clock_rtl_clk_n;
-  diff_clock_rtl_1_CLK_P <= diff_clock_rtl_clk_p;
   interrupt <= axi_uartlite_0_interrupt;
+  microblaze_0_Clk <= CLK;
   reset_rtl_0_1 <= reset_rtl_0;
-  reset_rtl_1 <= reset_rtl;
   uart_rtl_txd <= axi_uartlite_0_UART_TxD;
 IOT_0: component design_1_IOT_0_0
      port map (
@@ -2938,14 +2921,6 @@ axi_uartlite_0: component design_1_axi_uartlite_0_0
       s_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => microblaze_0_axi_periph_M01_AXI_WVALID,
       tx => axi_uartlite_0_UART_TxD
-    );
-clk_wiz_1: component design_1_clk_wiz_1_0
-     port map (
-      clk_in1_n => diff_clock_rtl_1_CLK_N,
-      clk_in1_p => diff_clock_rtl_1_CLK_P,
-      clk_out1 => microblaze_0_Clk,
-      locked => clk_wiz_1_locked,
-      reset => reset_rtl_1
     );
 mdm_1: component design_1_mdm_1_0
      port map (
@@ -3320,7 +3295,7 @@ rst_clk_wiz_1_100M: component design_1_rst_clk_wiz_1_100M_0
      port map (
       aux_reset_in => '1',
       bus_struct_reset(0) => rst_clk_wiz_1_100M_bus_struct_reset(0),
-      dcm_locked => clk_wiz_1_locked,
+      dcm_locked => '1',
       ext_reset_in => reset_rtl_0_1,
       interconnect_aresetn(0) => rst_clk_wiz_1_100M_interconnect_aresetn(0),
       mb_debug_sys_rst => mdm_1_debug_sys_rst,

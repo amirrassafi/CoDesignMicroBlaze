@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
 -- Date        : Wed Jan 11 03:15:38 2017
 -- Host        : amir running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_0/design_1_IOT_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_IOT_0_0 -prefix
+--               design_1_IOT_0_0_ design_1_IOT_0_0_sim_netlist.vhdl
 -- Design      : design_1_IOT_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity design_1_IOT_0_0_Motion_Detection is
     Camera : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Motion_EN_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_Motion_Detection : entity is "Motion_Detection";
 end design_1_IOT_0_0_Motion_Detection;
 
 architecture STRUCTURE of design_1_IOT_0_0_Motion_Detection is
@@ -2162,8 +2160,6 @@ entity design_1_IOT_0_0_Sound_Detection is
     Sound : in STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_Sound_Detection : entity is "Sound_Detection";
 end design_1_IOT_0_0_Sound_Detection;
 
 architecture STRUCTURE of design_1_IOT_0_0_Sound_Detection is
@@ -2191,8 +2187,6 @@ entity design_1_IOT_0_0_temp is
     Temp2 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Temp0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_temp : entity is "temp";
 end design_1_IOT_0_0_temp;
 
 architecture STRUCTURE of design_1_IOT_0_0_temp is
@@ -3804,8 +3798,6 @@ entity design_1_IOT_0_0_CMDCTRL is
     Temp2 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Temp0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_CMDCTRL : entity is "CMDCTRL";
 end design_1_IOT_0_0_CMDCTRL;
 
 architecture STRUCTURE of design_1_IOT_0_0_CMDCTRL is
@@ -4027,8 +4019,6 @@ entity design_1_IOT_0_0_IOT_v1_0_S00_AXI is
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_IOT_v1_0_S00_AXI : entity is "IOT_v1_0_S00_AXI";
 end design_1_IOT_0_0_IOT_v1_0_S00_AXI;
 
 architecture STRUCTURE of design_1_IOT_0_0_IOT_v1_0_S00_AXI is
@@ -6176,8 +6166,6 @@ entity design_1_IOT_0_0_IOT_v1_0 is
     s00_axi_bready : in STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_IOT_0_0_IOT_v1_0 : entity is "IOT_v1_0";
 end design_1_IOT_0_0_IOT_v1_0;
 
 architecture STRUCTURE of design_1_IOT_0_0_IOT_v1_0 is

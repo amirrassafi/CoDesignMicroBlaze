@@ -237,13 +237,13 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set diff_clock_rtl [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 diff_clock_rtl ]
-  set_property -dict [ list \
-CONFIG.FREQ_HZ {100000000} \
- ] $diff_clock_rtl
   set uart_rtl [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 uart_rtl ]
 
   # Create ports
+  set CLK [ create_bd_port -dir I -type clk CLK ]
+  set_property -dict [ list \
+CONFIG.FREQ_HZ {100000000} \
+ ] $CLK
   set Camera [ create_bd_port -dir I -from 7 -to 0 Camera ]
   set Cooler [ create_bd_port -dir O Cooler ]
   set Heater [ create_bd_port -dir O Heater ]
@@ -254,10 +254,6 @@ CONFIG.FREQ_HZ {100000000} \
   set Temp1 [ create_bd_port -dir I -from 7 -to 0 Temp1 ]
   set Temp2 [ create_bd_port -dir I -from 7 -to 0 Temp2 ]
   set interrupt [ create_bd_port -dir O -type intr interrupt ]
-  set reset_rtl [ create_bd_port -dir I -type rst reset_rtl ]
-  set_property -dict [ list \
-CONFIG.POLARITY {ACTIVE_HIGH} \
- ] $reset_rtl
   set reset_rtl_0 [ create_bd_port -dir I -type rst reset_rtl_0 ]
   set_property -dict [ list \
 CONFIG.POLARITY {ACTIVE_LOW} \
@@ -268,30 +264,6 @@ CONFIG.POLARITY {ACTIVE_LOW} \
 
   # Create instance: axi_uartlite_0, and set properties
   set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]
-
-  # Create instance: clk_wiz_1, and set properties
-  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_1 ]
-  set_property -dict [ list \
-CONFIG.CLKOUT1_JITTER {130.958} \
-CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
-CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
-CONFIG.MMCM_CLKIN1_PERIOD {10.0} \
-CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} \
-CONFIG.MMCM_COMPENSATION {ZHOLD} \
-CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} \
- ] $clk_wiz_1
-
-  # Need to retain value_src of defaults
-  set_property -dict [ list \
-CONFIG.CLKOUT1_JITTER.VALUE_SRC {DEFAULT} \
-CONFIG.CLKOUT1_PHASE_ERROR.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_CLKFBOUT_MULT_F.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_CLKIN1_PERIOD.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_CLKIN2_PERIOD.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_CLKOUT0_DIVIDE_F.VALUE_SRC {DEFAULT} \
-CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
- ] $clk_wiz_1
 
   # Create instance: mdm_1, and set properties
   set mdm_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_1 ]
@@ -333,7 +305,6 @@ CONFIG.NUM_SI {3} \
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports uart_rtl] [get_bd_intf_pins axi_uartlite_0/UART]
-  connect_bd_intf_net -intf_net diff_clock_rtl_1 [get_bd_intf_ports diff_clock_rtl] [get_bd_intf_pins clk_wiz_1/CLK_IN1_D]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_DC [get_bd_intf_pins microblaze_0/M_AXI_DC] [get_bd_intf_pins microblaze_0_axi_periph/S01_AXI]
   connect_bd_intf_net -intf_net microblaze_0_M_AXI_IC [get_bd_intf_pins microblaze_0/M_AXI_IC] [get_bd_intf_pins microblaze_0_axi_periph/S02_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_dp [get_bd_intf_pins microblaze_0/M_AXI_DP] [get_bd_intf_pins microblaze_0_axi_periph/S00_AXI]
@@ -358,12 +329,10 @@ CONFIG.NUM_SI {3} \
   connect_bd_net -net Temp1_1 [get_bd_ports Temp1] [get_bd_pins IOT_0/Temp1]
   connect_bd_net -net Temp2_1 [get_bd_ports Temp2] [get_bd_pins IOT_0/Temp2]
   connect_bd_net -net axi_uartlite_0_interrupt [get_bd_ports interrupt] [get_bd_pins axi_uartlite_0/interrupt]
-  connect_bd_net -net clk_wiz_1_locked [get_bd_pins clk_wiz_1/locked] [get_bd_pins rst_clk_wiz_1_100M/dcm_locked]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/mb_debug_sys_rst]
-  connect_bd_net -net microblaze_0_Clk [get_bd_pins IOT_0/s00_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_axi_periph/S01_ACLK] [get_bd_pins microblaze_0_axi_periph/S02_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk]
+  connect_bd_net -net microblaze_0_Clk [get_bd_ports CLK] [get_bd_pins IOT_0/s00_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_axi_periph/S01_ACLK] [get_bd_pins microblaze_0_axi_periph/S02_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_1_100M/slowest_sync_clk]
   connect_bd_net -net microblaze_0_intr [get_bd_pins microblaze_0_axi_intc/intr] [get_bd_pins microblaze_0_xlconcat/dout]
   connect_bd_net -net reset_rtl_0_1 [get_bd_ports reset_rtl_0] [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
-  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_1/reset]
   connect_bd_net -net rst_clk_wiz_1_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_1_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_wiz_1_100M_interconnect_aresetn [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_clk_wiz_1_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_1_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_clk_wiz_1_100M/mb_reset]
@@ -384,64 +353,59 @@ CONFIG.NUM_SI {3} \
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
 preplace port uart_rtl -pg 1 -y 320 -defaultsOSRD
-preplace port reset_rtl -pg 1 -y 870 -defaultsOSRD
 preplace port Heater -pg 1 -y 100 -defaultsOSRD
 preplace port LightSensor -pg 1 -y 10 -defaultsOSRD
 preplace port Light -pg 1 -y 120 -defaultsOSRD
 preplace port Cooler -pg 1 -y 80 -defaultsOSRD
+preplace port CLK -pg 1 -y 570 -defaultsOSRD
 preplace port Sound -pg 1 -y 30 -defaultsOSRD
-preplace port diff_clock_rtl -pg 1 -y 850 -defaultsOSRD
 preplace port interrupt -pg 1 -y 340 -defaultsOSRD
 preplace port reset_rtl_0 -pg 1 -y 800 -defaultsOSRD
 preplace portBus Temp0 -pg 1 -y 50 -defaultsOSRD
 preplace portBus Camera -pg 1 -y -10 -defaultsOSRD
 preplace portBus Temp1 -pg 1 -y 70 -defaultsOSRD
 preplace portBus Temp2 -pg 1 -y 90 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 310 -defaultsOSRD
-preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -y 600 -defaultsOSRD
-preplace inst IOT_0 -pg 1 -lvl 6 -y 120 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 3 -y 870 -defaultsOSRD
-preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -y 690 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 6 -y 330 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 4 -y 680 -defaultsOSRD
-preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 820 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 860 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 670 -defaultsOSRD
-preplace netloc LightSensor_1 1 0 6 NJ 10 NJ 10 NJ 10 NJ 10 NJ 10 1660J
-preplace netloc Camera_1 1 0 6 0J -20 NJ -20 NJ -20 NJ -20 NJ -20 1690J
-preplace netloc IOT_0_SoundDetected 1 1 6 240 0 NJ 0 NJ 0 NJ 0 1700J -20 1950
-preplace netloc IOT_0_Heater 1 6 1 NJ
-preplace netloc axi_uartlite_0_interrupt 1 6 1 NJ
-preplace netloc microblaze_0_intr 1 2 1 570
-preplace netloc Temp0_1 1 0 6 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 1680J
-preplace netloc microblaze_0_Clk 1 1 5 220 210 580 210 830 210 1320 80 1630
-preplace netloc microblaze_0_intc_axi 1 2 4 600 90 NJ 90 NJ 90 1600
-preplace netloc microblaze_0_interrupt 1 3 1 820
-preplace netloc Sound_1 1 0 6 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 1670J
-preplace netloc microblaze_0_M_AXI_DC 1 4 1 1310
-preplace netloc microblaze_0_ilmb_1 1 4 1 N
-preplace netloc diff_clock_rtl_1 1 0 1 NJ
-preplace netloc microblaze_0_axi_dp 1 4 1 1290
-preplace netloc IOT_0_Cooler 1 6 1 NJ
-preplace netloc Temp1_1 1 0 6 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 1640J
-preplace netloc IOT_0_Light 1 6 1 NJ
-preplace netloc IOT_0_MotionDetected 1 1 6 230 -10 NJ -10 NJ -10 NJ -10 NJ -10 1940
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 560 230 NJ 230 NJ
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 NJ 800 NJ 800 1340
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N
-preplace netloc microblaze_0_M_AXI_IC 1 4 1 1330
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 590 470 NJ 470 1300 40 1610
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 600 790 850J
-preplace netloc clk_wiz_1_locked 1 1 1 230
-preplace netloc axi_uartlite_0_UART 1 6 1 NJ
-preplace netloc reset_rtl_0_1 1 0 2 NJ 800 NJ
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1620
-preplace netloc microblaze_0_dlmb_1 1 4 1 N
-preplace netloc Temp2_1 1 0 6 0J 60 NJ 60 NJ 60 NJ 60 NJ 60 1650J
-preplace netloc microblaze_0_debug 1 3 1 840
-preplace netloc mdm_1_debug_sys_rst 1 1 3 240 930 NJ 930 830
-preplace netloc reset_rtl_1 1 0 1 NJ
-levelinfo -pg 1 -20 120 400 710 1070 1470 1820 1970 -top -30 -bot 940
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 1 -y 600 -defaultsOSRD
+preplace inst IOT_0 -pg 1 -lvl 5 -y 120 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -y 870 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 2 -y 690 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -y 330 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 3 -y 680 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 1 -y 820 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -y 670 -defaultsOSRD
+preplace netloc LightSensor_1 1 0 5 NJ 10 NJ 10 NJ 10 NJ 10 1660J
+preplace netloc Camera_1 1 0 5 0J -20 NJ -20 NJ -20 NJ -20 1690J
+preplace netloc IOT_0_SoundDetected 1 0 6 20 0 NJ 0 NJ 0 NJ 0 1700J -20 1950
+preplace netloc IOT_0_Heater 1 5 1 NJ
+preplace netloc axi_uartlite_0_interrupt 1 5 1 NJ
+preplace netloc microblaze_0_intr 1 1 1 570
+preplace netloc Temp0_1 1 0 5 NJ 50 NJ 50 NJ 50 NJ 50 1680J
+preplace netloc microblaze_0_Clk 1 0 5 0 210 580 210 830 210 1320 80 1630
+preplace netloc microblaze_0_intc_axi 1 1 4 600 90 NJ 90 NJ 90 1600
+preplace netloc microblaze_0_interrupt 1 2 1 820
+preplace netloc Sound_1 1 0 5 NJ 30 NJ 30 NJ 30 NJ 30 1670J
+preplace netloc microblaze_0_M_AXI_DC 1 3 1 1310
+preplace netloc microblaze_0_ilmb_1 1 3 1 N
+preplace netloc microblaze_0_axi_dp 1 3 1 1290
+preplace netloc IOT_0_Cooler 1 5 1 NJ
+preplace netloc Temp1_1 1 0 5 NJ 70 NJ 70 NJ 70 NJ 70 1640J
+preplace netloc IOT_0_Light 1 5 1 NJ
+preplace netloc IOT_0_MotionDetected 1 0 6 10 -10 NJ -10 NJ -10 NJ -10 NJ -10 1940
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 1 3 560 230 NJ 230 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 3 NJ 800 NJ 800 1340
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 N
+preplace netloc microblaze_0_M_AXI_IC 1 3 1 1330
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 4 590 470 NJ 470 1300 40 1610
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 2 600 790 850J
+preplace netloc axi_uartlite_0_UART 1 5 1 NJ
+preplace netloc reset_rtl_0_1 1 0 1 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1620
+preplace netloc microblaze_0_dlmb_1 1 3 1 N
+preplace netloc Temp2_1 1 0 5 0J 60 NJ 60 NJ 60 NJ 60 1650J
+preplace netloc microblaze_0_debug 1 2 1 840
+preplace netloc mdm_1_debug_sys_rst 1 0 3 20 930 NJ 930 830
+levelinfo -pg 1 -20 400 710 1070 1470 1820 1970 -top -30 -bot 940
 ",
 }
 
