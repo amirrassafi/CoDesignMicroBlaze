@@ -28,3 +28,10 @@ make -C microblaze_0/libsrc/IOT_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" 
 "Running Make libs in microblaze_0/libsrc/standalone_v6_0/src"
 make -C microblaze_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+
+03:36:46 Build Finished (took 6s.137ms)
+
