@@ -156,7 +156,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>Cooler</spirit:name>
+          <spirit:name>Light</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -168,13 +168,35 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>Light</spirit:name>
+          <spirit:name>Cooler</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>Temp0</spirit:name>
+          <spirit:name>LightSensor</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Camera</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>7</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Sound</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Temp2</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
@@ -194,35 +216,13 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>Temp2</spirit:name>
+          <spirit:name>Temp0</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
               <spirit:left>7</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>Sound</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>Camera</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>7</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>LightSensor</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -245,7 +245,7 @@
         <spirit:instanceName>microblaze_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="microblaze" spirit:vendor="xilinx.com" spirit:version="10.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_AXI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_I_LMB">1</spirit:configurableElementValue>
@@ -265,7 +265,7 @@
         <spirit:instanceName>microblaze_0_axi_periph</spirit:instanceName>
         <spirit:componentRef spirit:library="BlockDiagram/design_1_imp" spirit:name="microblaze_0_axi_periph" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_axi_periph_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_axi_periph_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
@@ -275,7 +275,7 @@
         <spirit:instanceName>microblaze_0_axi_intc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_intc" spirit:vendor="xilinx.com" spirit:version="4.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_axi_intc_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_axi_intc_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_HAS_FAST">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -283,35 +283,35 @@
         <spirit:instanceName>microblaze_0_xlconcat</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_xlconcat_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_microblaze_0_xlconcat_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>mdm_1</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="mdm" spirit:vendor="xilinx.com" spirit:version="3.2"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_mdm_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_mdm_1_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>rst_clk_wiz_1_100M</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="proc_sys_reset" spirit:vendor="xilinx.com" spirit:version="5.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rst_clk_wiz_1_100M_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rst_clk_wiz_1_100M_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>axi_uartlite_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_uartlite" spirit:vendor="xilinx.com" spirit:version="2.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_uartlite_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_uartlite_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>IOT_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="IOT" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_IOT_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_IOT_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -431,6 +431,11 @@
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_1_100M" spirit:portRef="ext_reset_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
+        <spirit:name>axi_uartlite_0_interrupt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="interrupt"/>
+        <spirit:externalPortReference spirit:portRef="interrupt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
         <spirit:name>IOT_0_MotionDetected</spirit:name>
         <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="MotionDetected"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In0"/>
@@ -441,14 +446,9 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>axi_uartlite_0_interrupt</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="interrupt"/>
-        <spirit:externalPortReference spirit:portRef="interrupt"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>IOT_0_Cooler</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Cooler"/>
-        <spirit:externalPortReference spirit:portRef="Cooler"/>
+        <spirit:name>IOT_0_Light</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Light"/>
+        <spirit:externalPortReference spirit:portRef="Light"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>IOT_0_Heater</spirit:name>
@@ -456,29 +456,14 @@
         <spirit:externalPortReference spirit:portRef="Heater"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>IOT_0_Light</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Light"/>
-        <spirit:externalPortReference spirit:portRef="Light"/>
+        <spirit:name>IOT_0_Cooler</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Cooler"/>
+        <spirit:externalPortReference spirit:portRef="Cooler"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>Temp0_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="Temp0"/>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp0"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Temp1_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="Temp1"/>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Temp2_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="Temp2"/>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp2"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>Sound_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="Sound"/>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Sound"/>
+        <spirit:name>LightSensor_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="LightSensor"/>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="LightSensor"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Camera_1</spirit:name>
@@ -486,9 +471,24 @@
         <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Camera"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>LightSensor_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="LightSensor"/>
-        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="LightSensor"/>
+        <spirit:name>Sound_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Sound"/>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Sound"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Temp2_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Temp2"/>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Temp1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Temp1"/>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Temp0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Temp0"/>
+        <spirit:internalPortReference spirit:componentRef="IOT_0" spirit:portRef="Temp0"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -1020,7 +1020,7 @@
         <spirit:instanceName>xbar</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="axi_crossbar" spirit:vendor="xilinx.com" spirit:version="2.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xbar_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xbar_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="STRATEGY">0</spirit:configurableElementValue>
@@ -2421,21 +2421,21 @@
         <spirit:instanceName>dlmb_v10</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="lmb_v10" spirit:vendor="xilinx.com" spirit:version="3.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dlmb_v10_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dlmb_v10_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>ilmb_v10</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="lmb_v10" spirit:vendor="xilinx.com" spirit:version="3.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ilmb_v10_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ilmb_v10_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>dlmb_bram_if_cntlr</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="lmb_bram_if_cntlr" spirit:vendor="xilinx.com" spirit:version="4.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dlmb_bram_if_cntlr_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dlmb_bram_if_cntlr_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ECC">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
@@ -2444,7 +2444,7 @@
         <spirit:instanceName>ilmb_bram_if_cntlr</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="lmb_bram_if_cntlr" spirit:vendor="xilinx.com" spirit:version="4.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ilmb_bram_if_cntlr_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_ilmb_bram_if_cntlr_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ECC">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -2452,7 +2452,7 @@
         <spirit:instanceName>lmb_bram</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="blk_mem_gen" spirit:vendor="xilinx.com" spirit:version="8.3"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_lmb_bram_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_lmb_bram_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="Memory_Type">True_Dual_Port_RAM</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="use_bram_block">BRAM_Controller</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -2523,13 +2523,13 @@
             <spirit:name>SEG_IOT_0_S00_AXI_reg</spirit:name>
             <spirit:displayName>/IOT_0/S00_AXI/S00_AXI_reg</spirit:displayName>
             <spirit:addressOffset>0x44A00000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
             <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x40600000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_dlmb_bram_if_cntlr_Mem</spirit:name>
@@ -2541,7 +2541,7 @@
             <spirit:name>SEG_microblaze_0_axi_intc_Reg</spirit:name>
             <spirit:displayName>/microblaze_0_axi_intc/S_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x41200000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>
@@ -2554,13 +2554,13 @@
             <spirit:name>SEG_IOT_0_S00_AXI_reg</spirit:name>
             <spirit:displayName>/IOT_0/S00_AXI/S00_AXI_reg</spirit:displayName>
             <spirit:addressOffset>0x44A00000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
             <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x40600000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
             <spirit:name>SEG_ilmb_bram_if_cntlr_Mem</spirit:name>
@@ -2572,7 +2572,7 @@
             <spirit:name>SEG_microblaze_0_axi_intc_Reg</spirit:name>
             <spirit:displayName>/microblaze_0_axi_intc/S_AXI/Reg</spirit:displayName>
             <spirit:addressOffset>0x41200000</spirit:addressOffset>
-            <spirit:range>8K</spirit:range>
+            <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
       </spirit:addressSpace>

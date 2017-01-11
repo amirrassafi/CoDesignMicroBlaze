@@ -58,6 +58,3 @@ INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_axi_periph_0
 INFO: [VRFC 10-307] analyzing entity design_1
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity tb
-ERROR: [VRFC 10-91] sound is not declared [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sim_1/new/tb.vhd:68]
-ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sim_1/new/tb.vhd:38]
-INFO: [VRFC 10-240] VHDL file D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sim_1/new/tb.vhd ignored due to errors

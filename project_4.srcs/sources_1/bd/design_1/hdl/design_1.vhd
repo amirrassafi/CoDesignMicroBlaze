@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
---Date        : Wed Jan 11 03:33:43 2017
+--Date        : Wed Jan 11 10:29:20 2017
 --Host        : amir running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -351,7 +351,7 @@ entity microblaze_0_local_memory_imp_1K0VQXK is
 end microblaze_0_local_memory_imp_1K0VQXK;
 
 architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
-  component design_1_dlmb_v10_0 is
+  component design_1_dlmb_v10_1 is
   port (
     LMB_Clk : in STD_LOGIC;
     SYS_Rst : in STD_LOGIC;
@@ -379,8 +379,8 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
     LMB_CE : out STD_LOGIC;
     LMB_BE : out STD_LOGIC_VECTOR ( 0 to 3 )
   );
-  end component design_1_dlmb_v10_0;
-  component design_1_ilmb_v10_0 is
+  end component design_1_dlmb_v10_1;
+  component design_1_ilmb_v10_1 is
   port (
     LMB_Clk : in STD_LOGIC;
     SYS_Rst : in STD_LOGIC;
@@ -408,8 +408,8 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
     LMB_CE : out STD_LOGIC;
     LMB_BE : out STD_LOGIC_VECTOR ( 0 to 3 )
   );
-  end component design_1_ilmb_v10_0;
-  component design_1_dlmb_bram_if_cntlr_0 is
+  end component design_1_ilmb_v10_1;
+  component design_1_dlmb_bram_if_cntlr_1 is
   port (
     LMB_Clk : in STD_LOGIC;
     LMB_Rst : in STD_LOGIC;
@@ -432,8 +432,8 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
     BRAM_Dout_A : out STD_LOGIC_VECTOR ( 0 to 31 );
     BRAM_Din_A : in STD_LOGIC_VECTOR ( 0 to 31 )
   );
-  end component design_1_dlmb_bram_if_cntlr_0;
-  component design_1_ilmb_bram_if_cntlr_0 is
+  end component design_1_dlmb_bram_if_cntlr_1;
+  component design_1_ilmb_bram_if_cntlr_1 is
   port (
     LMB_Clk : in STD_LOGIC;
     LMB_Rst : in STD_LOGIC;
@@ -456,8 +456,8 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
     BRAM_Dout_A : out STD_LOGIC_VECTOR ( 0 to 31 );
     BRAM_Din_A : in STD_LOGIC_VECTOR ( 0 to 31 )
   );
-  end component design_1_ilmb_bram_if_cntlr_0;
-  component design_1_lmb_bram_0 is
+  end component design_1_ilmb_bram_if_cntlr_1;
+  component design_1_lmb_bram_1 is
   port (
     clka : in STD_LOGIC;
     rsta : in STD_LOGIC;
@@ -474,7 +474,7 @@ architecture STRUCTURE of microblaze_0_local_memory_imp_1K0VQXK is
     dinb : in STD_LOGIC_VECTOR ( 31 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  end component design_1_lmb_bram_0;
+  end component design_1_lmb_bram_1;
   signal SYS_Rst_1 : STD_LOGIC;
   signal microblaze_0_Clk : STD_LOGIC;
   signal microblaze_0_dlmb_ABUS : STD_LOGIC_VECTOR ( 0 to 31 );
@@ -560,7 +560,7 @@ begin
   microblaze_0_ilmb_ABUS(0 to 31) <= ILMB_abus(0 to 31);
   microblaze_0_ilmb_ADDRSTROBE <= ILMB_addrstrobe;
   microblaze_0_ilmb_READSTROBE <= ILMB_readstrobe;
-dlmb_bram_if_cntlr: component design_1_dlmb_bram_if_cntlr_0
+dlmb_bram_if_cntlr: component design_1_dlmb_bram_if_cntlr_1
      port map (
       BRAM_Addr_A(0 to 31) => microblaze_0_dlmb_cntlr_ADDR(0 to 31),
       BRAM_Clk_A => microblaze_0_dlmb_cntlr_CLK,
@@ -614,7 +614,7 @@ dlmb_bram_if_cntlr: component design_1_dlmb_bram_if_cntlr_0
       Sl_UE => microblaze_0_dlmb_bus_UE,
       Sl_Wait => microblaze_0_dlmb_bus_WAIT
     );
-dlmb_v10: component design_1_dlmb_v10_0
+dlmb_v10: component design_1_dlmb_v10_1
      port map (
       LMB_ABus(0 to 31) => microblaze_0_dlmb_bus_ABUS(0 to 31),
       LMB_AddrStrobe => microblaze_0_dlmb_bus_ADDRSTROBE,
@@ -642,7 +642,7 @@ dlmb_v10: component design_1_dlmb_v10_0
       Sl_UE(0) => microblaze_0_dlmb_bus_UE,
       Sl_Wait(0) => microblaze_0_dlmb_bus_WAIT
     );
-ilmb_bram_if_cntlr: component design_1_ilmb_bram_if_cntlr_0
+ilmb_bram_if_cntlr: component design_1_ilmb_bram_if_cntlr_1
      port map (
       BRAM_Addr_A(0 to 31) => microblaze_0_ilmb_cntlr_ADDR(0 to 31),
       BRAM_Clk_A => microblaze_0_ilmb_cntlr_CLK,
@@ -696,7 +696,7 @@ ilmb_bram_if_cntlr: component design_1_ilmb_bram_if_cntlr_0
       Sl_UE => microblaze_0_ilmb_bus_UE,
       Sl_Wait => microblaze_0_ilmb_bus_WAIT
     );
-ilmb_v10: component design_1_ilmb_v10_0
+ilmb_v10: component design_1_ilmb_v10_1
      port map (
       LMB_ABus(0 to 31) => microblaze_0_ilmb_bus_ABUS(0 to 31),
       LMB_AddrStrobe => microblaze_0_ilmb_bus_ADDRSTROBE,
@@ -724,7 +724,7 @@ ilmb_v10: component design_1_ilmb_v10_0
       Sl_UE(0) => microblaze_0_ilmb_bus_UE,
       Sl_Wait(0) => microblaze_0_ilmb_bus_WAIT
     );
-lmb_bram: component design_1_lmb_bram_0
+lmb_bram: component design_1_lmb_bram_1
      port map (
       addra(31) => microblaze_0_dlmb_cntlr_ADDR(0),
       addra(30) => microblaze_0_dlmb_cntlr_ADDR(1),
@@ -1430,7 +1430,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity design_1_microblaze_0_axi_periph_0 is
+entity design_1_microblaze_0_axi_periph_1 is
   port (
     ACLK : in STD_LOGIC;
     ARESETN : in STD_LOGIC;
@@ -1567,10 +1567,10 @@ entity design_1_microblaze_0_axi_periph_0 is
     S02_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S02_AXI_rvalid : out STD_LOGIC
   );
-end design_1_microblaze_0_axi_periph_0;
+end design_1_microblaze_0_axi_periph_1;
 
-architecture STRUCTURE of design_1_microblaze_0_axi_periph_0 is
-  component design_1_xbar_0 is
+architecture STRUCTURE of design_1_microblaze_0_axi_periph_1 is
+  component design_1_xbar_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -1613,7 +1613,7 @@ architecture STRUCTURE of design_1_microblaze_0_axi_periph_0 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  end component design_1_xbar_0;
+  end component design_1_xbar_1;
   signal M00_ACLK_1 : STD_LOGIC;
   signal M00_ARESETN_1 : STD_LOGIC;
   signal M01_ACLK_1 : STD_LOGIC;
@@ -2249,7 +2249,7 @@ s02_couplers: entity work.s02_couplers_imp_1R40M8T
       S_AXI_rresp(1 downto 0) => microblaze_0_axi_periph_to_s02_couplers_RRESP(1 downto 0),
       S_AXI_rvalid => microblaze_0_axi_periph_to_s02_couplers_RVALID
     );
-xbar: component design_1_xbar_0
+xbar: component design_1_xbar_1
      port map (
       aclk => microblaze_0_axi_periph_ACLK_net,
       aresetn => microblaze_0_axi_periph_ARESETN_net,
@@ -2389,13 +2389,13 @@ entity design_1 is
     uart_rtl_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=23,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=4,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=23,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=15,da_mb_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
-  component design_1_microblaze_0_0 is
+  component design_1_microblaze_0_1 is
   port (
     Clk : in STD_LOGIC;
     Reset : in STD_LOGIC;
@@ -2524,8 +2524,8 @@ architecture STRUCTURE of design_1 is
     M_AXI_DC_RVALID : in STD_LOGIC;
     M_AXI_DC_RREADY : out STD_LOGIC
   );
-  end component design_1_microblaze_0_0;
-  component design_1_microblaze_0_axi_intc_0 is
+  end component design_1_microblaze_0_1;
+  component design_1_microblaze_0_axi_intc_1 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -2553,15 +2553,15 @@ architecture STRUCTURE of design_1 is
     processor_ack : in STD_LOGIC_VECTOR ( 1 downto 0 );
     interrupt_address : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  end component design_1_microblaze_0_axi_intc_0;
-  component design_1_microblaze_0_xlconcat_0 is
+  end component design_1_microblaze_0_axi_intc_1;
+  component design_1_microblaze_0_xlconcat_1 is
   port (
     In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  end component design_1_microblaze_0_xlconcat_0;
-  component design_1_mdm_1_0 is
+  end component design_1_microblaze_0_xlconcat_1;
+  component design_1_mdm_1_1 is
   port (
     Debug_SYS_Rst : out STD_LOGIC;
     Dbg_Clk_0 : out STD_LOGIC;
@@ -2574,8 +2574,8 @@ architecture STRUCTURE of design_1 is
     Dbg_Rst_0 : out STD_LOGIC;
     Dbg_Disable_0 : out STD_LOGIC
   );
-  end component design_1_mdm_1_0;
-  component design_1_rst_clk_wiz_1_100M_0 is
+  end component design_1_mdm_1_1;
+  component design_1_rst_clk_wiz_1_100M_1 is
   port (
     slowest_sync_clk : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC;
@@ -2588,8 +2588,8 @@ architecture STRUCTURE of design_1 is
     interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component design_1_rst_clk_wiz_1_100M_0;
-  component design_1_axi_uartlite_0_0 is
+  end component design_1_rst_clk_wiz_1_100M_1;
+  component design_1_axi_uartlite_0_1 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -2614,8 +2614,8 @@ architecture STRUCTURE of design_1 is
     rx : in STD_LOGIC;
     tx : out STD_LOGIC
   );
-  end component design_1_axi_uartlite_0_0;
-  component design_1_IOT_0_0 is
+  end component design_1_axi_uartlite_0_1;
+  component design_1_IOT_0_1 is
   port (
     Temp0 : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Temp1 : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -2650,7 +2650,7 @@ architecture STRUCTURE of design_1 is
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC
   );
-  end component design_1_IOT_0_0;
+  end component design_1_IOT_0_1;
   signal Camera_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal IOT_0_Cooler : STD_LOGIC;
   signal IOT_0_Heater : STD_LOGIC;
@@ -2862,7 +2862,7 @@ begin
   microblaze_0_Clk <= CLK;
   reset_rtl_0_1 <= reset_rtl_0;
   uart_rtl_txd <= axi_uartlite_0_UART_TxD;
-IOT_0: component design_1_IOT_0_0
+IOT_0: component design_1_IOT_0_1
      port map (
       Camera(7 downto 0) => Camera_1(7 downto 0),
       Cooler => IOT_0_Cooler,
@@ -2897,7 +2897,7 @@ IOT_0: component design_1_IOT_0_0
       s00_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M02_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => microblaze_0_axi_periph_M02_AXI_WVALID
     );
-axi_uartlite_0: component design_1_axi_uartlite_0_0
+axi_uartlite_0: component design_1_axi_uartlite_0_1
      port map (
       interrupt => axi_uartlite_0_interrupt,
       rx => axi_uartlite_0_UART_RxD,
@@ -2922,7 +2922,7 @@ axi_uartlite_0: component design_1_axi_uartlite_0_0
       s_axi_wvalid => microblaze_0_axi_periph_M01_AXI_WVALID,
       tx => axi_uartlite_0_UART_TxD
     );
-mdm_1: component design_1_mdm_1_0
+mdm_1: component design_1_mdm_1_1
      port map (
       Dbg_Capture_0 => microblaze_0_debug_CAPTURE,
       Dbg_Clk_0 => microblaze_0_debug_CLK,
@@ -2935,7 +2935,7 @@ mdm_1: component design_1_mdm_1_0
       Dbg_Update_0 => microblaze_0_debug_UPDATE,
       Debug_SYS_Rst => mdm_1_debug_sys_rst
     );
-microblaze_0: component design_1_microblaze_0_0
+microblaze_0: component design_1_microblaze_0_1
      port map (
       Byte_Enable(0 to 3) => microblaze_0_dlmb_1_BE(0 to 3),
       Clk => microblaze_0_Clk,
@@ -3095,7 +3095,7 @@ microblaze_0: component design_1_microblaze_0_0
       Reset => rst_clk_wiz_1_100M_mb_reset,
       Write_Strobe => microblaze_0_dlmb_1_WRITESTROBE
     );
-microblaze_0_axi_intc: component design_1_microblaze_0_axi_intc_0
+microblaze_0_axi_intc: component design_1_microblaze_0_axi_intc_1
      port map (
       interrupt_address(31 downto 0) => microblaze_0_interrupt_ADDRESS(31 downto 0),
       intr(1 downto 0) => microblaze_0_intr(1 downto 0),
@@ -3124,7 +3124,7 @@ microblaze_0_axi_intc: component design_1_microblaze_0_axi_intc_0
       s_axi_wstrb(3 downto 0) => microblaze_0_intc_axi_WSTRB(3 downto 0),
       s_axi_wvalid => microblaze_0_intc_axi_WVALID
     );
-microblaze_0_axi_periph: entity work.design_1_microblaze_0_axi_periph_0
+microblaze_0_axi_periph: entity work.design_1_microblaze_0_axi_periph_1
      port map (
       ACLK => microblaze_0_Clk,
       ARESETN => rst_clk_wiz_1_100M_interconnect_aresetn(0),
@@ -3285,13 +3285,13 @@ microblaze_0_local_memory: entity work.microblaze_0_local_memory_imp_1K0VQXK
       LMB_Clk => microblaze_0_Clk,
       SYS_Rst => rst_clk_wiz_1_100M_bus_struct_reset(0)
     );
-microblaze_0_xlconcat: component design_1_microblaze_0_xlconcat_0
+microblaze_0_xlconcat: component design_1_microblaze_0_xlconcat_1
      port map (
       In0(0) => IOT_0_MotionDetected,
       In1(0) => IOT_0_SoundDetected,
       dout(1 downto 0) => microblaze_0_intr(1 downto 0)
     );
-rst_clk_wiz_1_100M: component design_1_rst_clk_wiz_1_100M_0
+rst_clk_wiz_1_100M: component design_1_rst_clk_wiz_1_100M_1
      port map (
       aux_reset_in => '1',
       bus_struct_reset(0) => rst_clk_wiz_1_100M_bus_struct_reset(0),
