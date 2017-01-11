@@ -62,6 +62,9 @@ int main()
     set_temp(20);
     i=1000;
     while(i--);
+    set_temp(120);
+    i=1000;
+    while(i--);
 
     print("Hello World\n\r");
 

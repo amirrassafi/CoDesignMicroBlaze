@@ -75,4 +75,35 @@ architecture Behavioral of tb is
         uart_rtl_rxd => uart_rtl_rxd,
         uart_rtl_txd => uart_rtl_txd
       );
+      reset_rtl_0<='1';
+      process
+      begin
+        CLK<='1';
+        wait for 10 ns;
+        CLK<='0';
+        wait for 10 ns;
+      end process;
+      
+      process
+        begin
+          LightSensor<='1';
+          wait for 100 us;
+          LightSensor<='0';
+          wait for 300 us;
+      end process;
+      
+      process
+        begin
+        Temp0<="01000000";
+        temp1<="01100000";
+        temp2<="01110000";
+        wait for 50 us;
+        temp0<="01000100";
+        temp1<="01100100";
+        temp2<="01110100";
+        wait for 200 us;
+      end process;
+
+    camera<="00000000";
+    sound<='0';            
 end Behavioral;

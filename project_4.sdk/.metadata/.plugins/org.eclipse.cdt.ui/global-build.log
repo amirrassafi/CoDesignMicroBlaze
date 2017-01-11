@@ -79,3 +79,24 @@ mb-size test.elf  |tee "test.elf.size"
 10:37:18 **** Incremental Build of configuration Debug for project test ****
 make all 
 make: Nothing to be done for `all'.
+10:58:00 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7560	    340	   3252	  11152	   2b90	test.elf
+'Finished building: test.elf.size'
+' '
+10:58:03 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
