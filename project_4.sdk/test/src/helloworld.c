@@ -48,12 +48,12 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-#include "IOT.h"
+
 
 int main()
 {
     init_platform();
-    light_on();
+
     print("Hello World\n\r");
 
     cleanup_platform();
