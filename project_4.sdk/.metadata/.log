@@ -1,62 +1,58 @@
-!SESSION 2017-01-11 10:34:26.889 -----------------------------------------------
+!SESSION 2017-01-20 16:22:36.188 -----------------------------------------------
 eclipse.buildId=2016.3
 java.version=1.8.0_66
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk
 
-!ENTRY org.eclipse.ui 2 0 2017-01-11 10:34:28.774
+!ENTRY org.eclipse.ui 2 0 2017-01-20 16:22:37.844
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-11 10:34:28.774
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-20 16:22:37.844
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2017-01-11 10:34:29.461
+!ENTRY org.eclipse.ui 2 0 2017-01-20 16:22:38.568
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-11 10:34:29.461
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-01-20 16:22:38.568
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.core.net 4 0 2017-01-11 10:34:50.482
-!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'The Proxy Auto-configuration URL was not found.
-' #12180.
-
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:51.329
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-8
-
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:51.330
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:45.973
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.266
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-8
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:45.974
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.266
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:45.979
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.267
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:45.980
 !MESSAGE XSCT Command: [setws D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk], Thread: Thread-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.269
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.248
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.248
 !MESSAGE XSCT command with result: [setws D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk], Result: [null, ]. Thread: Thread-15
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.614
-!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.466
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.699
-!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-3
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.544
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.750
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.557
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.753
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.561
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
 "family": "zynq",
-"timestamp": "Wed Jan 11 10:30:38 2017",
+"timestamp": "Fri Jan 20 16:10:59 2017",
 "vivado_version": "2016.3",
-}]. Thread: Worker-3
+}]. Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.756
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.565
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:52.762
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.572
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"IOT_0": {"hier_name": "IOT_0",
 "type": "IOT",
 "version": "1.0",
@@ -122,12 +118,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Lesson/TERM7/
 "version": "5.0",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-3
+}]. Thread: Worker-2
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.691
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.792
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.697
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.800
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
 "base": "0x40600000",
 "high": "0x4060FFFF",
@@ -174,16 +170,16 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/Lesson/TERM7/
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.723
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.833
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.726
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.837
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.753
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.866
 !MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:34:53.771
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:46.892
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"IOT_0": {},
 "axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
 "address_offset": "0x0",
@@ -627,10 +623,10 @@ For each bit:
 "microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.388
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.152
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.418
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.159
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"freertos823_xilinx_v1_2": {"name": "freertos823_xilinx",
 "version": "1.2",
 "desc": "FreeRTOS is a market leading open source RTOS",
@@ -655,34 +651,34 @@ For each bit:
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.482
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.177
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.484
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.178
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.496
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.184
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.498
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.186
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.499
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.186
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.501
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.188
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.515
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.197
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.517
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.199
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.518
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.199
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.656
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.333
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
 "description": "Dhrystone synthetic benchmark program.",
 "supp_proc": "microblaze ps7_cortexa9",
@@ -859,205 +855,205 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.687
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.338
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.823
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.348
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.825
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.350
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:20.833
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:53.359
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:22.799
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:54.990
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:22.801
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:54.992
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:22.819
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.002
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:22.821
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.003
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:23.151
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.239
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:23.153
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.241
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:23.226
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.356
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:23.228
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:55.358
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:26.824
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.380
 !MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw test_bsp -dir D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp -processor microblaze_0 -os standalone -app hello_world], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:26.852
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.390
 !MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw test_bsp -dir D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp -processor microblaze_0 -os standalone -app hello_world], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:27.103
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.460
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:27.106
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.462
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:27.107
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.463
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:27.109
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.465
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:27.110
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:57.466
 !MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:31.936
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.196
 !MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.218
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.739
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.220
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.741
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.221
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.742
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.224
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.744
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.225
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.745
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.227
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.747
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.228
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.748
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.230
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.749
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.230
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.750
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.232
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.752
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.233
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.752
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.235
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.754
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.236
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.755
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.238
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.757
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.238
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.757
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.240
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.759
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.244
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.763
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.265
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.765
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.266
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.766
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.269
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.768
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.270
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.769
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.272
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.771
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.272
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.771
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.275
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.773
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.275
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.774
 !MESSAGE XSCT Command: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.277
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.775
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.304
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.803
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.307
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.807
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.308
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.807
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.310
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.810
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.311
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.810
 !MESSAGE XSCT Command: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.313
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.812
 !MESSAGE XSCT command with result: [::hsi::utils::openhw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.313
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.812
 !MESSAGE XSCT Command: [::hsi::utils::opensw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.315
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.814
 !MESSAGE XSCT command with result: [::hsi::utils::opensw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.315
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.814
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test/src], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:33.418
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:58.856
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test/src], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.054
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.154
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.056
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.156
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.057
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.156
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.059
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.159
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.069
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.176
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.071
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.178
 !MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, IOT_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.072
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.178
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.075
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.181
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"IOT_0": {"name": "IOT",
 "ver": "1.0",
 },
@@ -1078,10 +1074,10 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.076
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.182
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.112
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.220
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"IOT_0": {"version": "1.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0",
@@ -1203,61 +1199,61 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.218
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.235
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.221
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.237
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.221
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.238
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.224
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.240
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.229
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.245
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.231
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.247
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.273
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.280
 !MESSAGE XSCT Command: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.274
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.281
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.851
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.795
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.855
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.807
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.856
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.810
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.875
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.814
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.880
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.835
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.882
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.842
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/design_1_wrapper_hw_platform_0/system.hdf D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.911
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.880
 !MESSAGE XSCT Command: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2017-01-11 10:35:34.913
+!ENTRY com.xilinx.sdk.utils 0 0 2017-01-20 16:22:59.884
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.sdk/test_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:35.568
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.104
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1284,7 +1280,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:35.782
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.205
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1295,7 +1291,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:35.787
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.215
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1306,7 +1302,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.178
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.321
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1317,7 +1313,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.183
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.329
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1328,7 +1324,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.245
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.435
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1339,7 +1335,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.251
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.442
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1350,7 +1346,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.324
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.544
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1361,7 +1357,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.329
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.551
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1372,7 +1368,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.391
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.657
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1383,7 +1379,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.395
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.663
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1394,7 +1390,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.715
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.950
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1405,7 +1401,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:36.960
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:00.956
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1416,7 +1412,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:37.095
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.063
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1427,7 +1423,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:37.100
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.069
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1438,7 +1434,10 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:37.140
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-20 16:23:01.073
+!MESSAGE Indexed 'test_bsp' (47 sources, 44 headers) in 1.16 sec: 1,237 declarations; 6,538 references; 26 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.31%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.126
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1449,13 +1448,10 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 1 0 2017-01-11 10:35:37.605
-!MESSAGE Indexed 'test_bsp' (47 sources, 44 headers) in 2.47 sec: 1,233 declarations; 6,522 references; 26 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.31%)
+!ENTRY org.eclipse.cdt.core 1 0 2017-01-20 16:23:01.355
+!MESSAGE Indexed 'test' (2 sources, 37 headers) in 0.248 sec: 1,326 declarations; 1,896 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2017-01-11 10:35:37.890
-!MESSAGE Indexed 'test' (2 sources, 37 headers) in 0.224 sec: 1,326 declarations; 1,896 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:38.639
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.730
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1466,7 +1462,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:38.777
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.786
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1477,7 +1473,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:38.781
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.791
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1488,7 +1484,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:38.822
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.835
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1499,7 +1495,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.020
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.991
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1510,7 +1506,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.024
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:01.995
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1521,7 +1517,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.063
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.033
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1532,7 +1528,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.650
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.611
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1543,7 +1539,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.654
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.615
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1554,7 +1550,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.693
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.653
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1565,7 +1561,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.933
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.859
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1576,7 +1572,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:39.939
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.863
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1587,7 +1583,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:40.040
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:02.965
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1598,7 +1594,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:42.470
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:05.246
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1609,7 +1605,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:42.474
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:05.250
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1620,7 +1616,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:42.515
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:05.289
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1631,7 +1627,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:43.544
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:05.837
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1642,7 +1638,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2017-01-11 10:35:43.563
+!ENTRY org.eclipse.cdt.core 4 0 2017-01-20 16:23:05.846
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException

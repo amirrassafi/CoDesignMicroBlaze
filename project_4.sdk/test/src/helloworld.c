@@ -49,10 +49,13 @@
 #include "platform.h"
 #include "xil_printf.h"
 #include "IOT.h"
-int i=0;
+
+
 int main()
 {
     init_platform();
+    int i=1000;
+    Motion_detection_on();
     light_on();
     i=1000;
     while(i--);
@@ -65,8 +68,18 @@ int main()
     set_temp(120);
     i=1000;
     while(i--);
+    i=1000;
+    while(i--);
 
-    print("Hello World\n\r");
+
+    while(1)
+    {
+    	if(Motion_detected())
+    	    print("Motion Detected\n\r");
+    	if(sound_detected())
+    	    print("Sound Detected\n\r");
+
+    }
 
     cleanup_platform();
     return 0;

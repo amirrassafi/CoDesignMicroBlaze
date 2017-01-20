@@ -103,7 +103,28 @@ architecture Behavioral of tb is
         temp2<="01110100";
         wait for 200 us;
       end process;
-
-    camera<="00000000";
+    
+    process
+        begin
+        -- a frame with all "11111111" pixel
+        camera <= "11111111";
+                     wait for 20 ns;
+                for i in 0 to 1000 loop
+                    camera <= "11111111";
+                     wait for 20 ns;
+                end loop;
+        camera <= "00000000";
+                    wait for 20 ns;      
+         -- a frame with all "00000001" pixel     
+        camera <= "11111111";
+                     wait for 20 ns;
+                 for i in 0 to 1000 loop
+                         camera <= "00000001";
+                          wait for 20 ns;
+                     end loop;
+        camera <= "00000000";
+                      wait for 20 ns;
+    end process;        
+   
     sound<='0';            
 end Behavioral;

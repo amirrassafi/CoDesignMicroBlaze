@@ -1,4 +1,4 @@
-10:35:35 **** Build of project test_bsp ****
+16:23:00 **** Build of project test_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_1/src"
 make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -32,7 +32,7 @@ make -C microblaze_0/libsrc/standalone_v6_0/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling uartlite"
 'Finished building libraries'
-10:35:45 **** Build of configuration Debug for project test ****
+16:23:06 **** Build of configuration Debug for project test ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -55,10 +55,35 @@ mb-size test.elf  |tee "test.elf.size"
    7184	    340	   3252	  10776	   2a18	test.elf
 'Finished building: test.elf.size'
 ' '
-10:35:47 **** Auto Build of configuration Debug for project test ****
+16:23:08 **** Auto Build of configuration Debug for project test ****
 make all 
 make: Nothing to be done for `all'.
-10:37:13 **** Auto Build of configuration Debug for project test ****
+16:24:54 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:5: error: 'i' undeclared (first use in this function)
+     i=1000;
+     ^
+../src/helloworld.c:60:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:9: warning: implicit declaration of function 'sound_detect' [-Wimplicit-function-declaration]
+      if(sound_detect())
+         ^
+make: *** [src/helloworld.o] Error 1
+16:24:58 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:5: error: 'i' undeclared (first use in this function)
+     i=1000;
+     ^
+../src/helloworld.c:60:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+16:25:18 **** Auto Build of configuration Debug for project test ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -73,30 +98,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-e
 'Invoking: MicroBlaze Print Size'
 mb-size test.elf  |tee "test.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   7504	    340	   3252	  11096	   2b58	test.elf
+   7968	    340	   3252	  11560	   2d28	test.elf
 'Finished building: test.elf.size'
 ' '
-10:37:18 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nothing to be done for `all'.
-10:58:00 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   7560	    340	   3252	  11152	   2b90	test.elf
-'Finished building: test.elf.size'
-' '
-10:58:03 **** Incremental Build of configuration Debug for project test ****
+16:25:23 **** Incremental Build of configuration Debug for project test ****
 make all 
 make: Nothing to be done for `all'.

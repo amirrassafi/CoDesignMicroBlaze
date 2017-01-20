@@ -20,19 +20,19 @@ INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/pr
 INFO: [VRFC 10-307] analyzing entity design_1_rst_clk_wiz_1_100M_1
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_1/sim/design_1_axi_uartlite_0_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity design_1_axi_uartlite_0_1
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/src/Sound_Detection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/src/Sound_Detection.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Sound_Detection
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/src/LightCTRL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/src/LightCTRL.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity LightCTRL
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/src/temp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/src/temp.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity temp
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/src/Motion_Detection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Motion_Detection
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/src/CMDCTRL.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity CMDCTRL
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity IOT_v1_0_S00_AXI
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/2711/hdl/IOT_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ipshared/55c4/hdl/IOT_v1_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity IOT_v1_0
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.ip_user_files/bd/design_1/ip/design_1_IOT_0_1/sim/design_1_IOT_0_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity design_1_IOT_0_1

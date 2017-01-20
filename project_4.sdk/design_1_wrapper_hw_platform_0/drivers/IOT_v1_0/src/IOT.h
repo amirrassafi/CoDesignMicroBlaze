@@ -84,5 +84,6 @@ void sound_detection_on();
 void sound_detection_off();
 void Motion_detection_on();
 void Motion_detection_off();
-
+int Motion_detected();
+int sound_detected();
 #endif // IOT_H

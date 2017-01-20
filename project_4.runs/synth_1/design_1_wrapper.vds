@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Wed Jan 11 10:32:46 2017
-# Process ID: 13328
+# Start of session at: Fri Jan 20 16:11:39 2017
+# Process ID: 6228
 # Current directory: D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/design_1_wrapper.vds
@@ -13,28 +13,29 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Lesson/TERM7/FPGA/Szamani/Project/ip_repo/IOT_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramFiles/Vivado/2016.3/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 303.801 ; gain = 66.879
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9380 
+INFO: Helper process launched with PID 2264 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 389.867 ; gain = 180.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 389.129 ; gain = 179.848
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
 INFO: [Synth 8-3491] module 'design_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2374' bound to instance 'design_1_i' of component 'design_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:53]
 INFO: [Synth 8-638] synthesizing module 'design_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2397]
-INFO: [Synth 8-3491] module 'design_1_IOT_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_IOT_0_1_stub.vhdl:5' bound to instance 'IOT_0' of component 'design_1_IOT_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2865]
-INFO: [Synth 8-638] synthesizing module 'design_1_IOT_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_IOT_0_1_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_axi_uartlite_0_1_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2900]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_axi_uartlite_0_1_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_mdm_1_1_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2925]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_mdm_1_1_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2938]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_1_stub.vhdl:137]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3098]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_IOT_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_IOT_0_1_stub.vhdl:5' bound to instance 'IOT_0' of component 'design_1_IOT_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2865]
+INFO: [Synth 8-638] synthesizing module 'design_1_IOT_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_IOT_0_1_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_axi_uartlite_0_1_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2900]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_axi_uartlite_0_1_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_mdm_1_1_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2925]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_mdm_1_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2938]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_1_stub.vhdl:137]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3098]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:36]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1572]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (1#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:57]
@@ -45,32 +46,32 @@ INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (3#1) [D:
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:926]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (4#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:926]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_2REGHR' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1051]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1221]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1221]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_auto_pc_0_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_2REGHR' (5#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1051]
 INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1R40M8T' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1317]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1399]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_auto_pc_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1399]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_auto_pc_1_stub.vhdl:37]
 INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1R40M8T' (6#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1317]
-INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2252]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_xbar_1_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_xbar_1_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2252]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_xbar_1_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (7#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1572]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:353]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:563]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:617]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:645]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:699]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:727]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_lmb_bram_1_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:563]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:617]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:645]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:699]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:727]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_lmb_bram_1_stub.vhdl:25]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (8#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:353]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3288]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_rst_clk_wiz_1_100M_1_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3294]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/realtime/design_1_rst_clk_wiz_1_100M_1_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3288]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_microblaze_0_xlconcat_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_1' declared at 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_rst_clk_wiz_1_100M_1_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:3294]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_1' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/realtime/design_1_rst_clk_wiz_1_100M_1_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (9#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2397]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (10#1) [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:33]
 WARNING: [Synth 8-3331] design s02_couplers_imp_1R40M8T has unconnected port M_ACLK
@@ -94,7 +95,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_AR
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 429.297 ; gain = 219.559
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 428.531 ; gain = 219.250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -104,7 +105,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 429.297 ; gain = 219.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 428.531 ; gain = 219.250
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_IOT_0_1' instantiated as 'design_1_i/IOT_0' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:2865]
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'design_1_auto_pc_0' instantiated as 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc' [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/hdl/design_1.vhd:1221]
@@ -126,36 +127,36 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_2/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_2/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_3/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_3/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_4/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_4/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_5/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_5/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_6/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_6/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_7/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_7/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_8/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_8/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_9/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_9/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_10/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_10/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_11/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_11/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_12/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_12/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_13/design_1_IOT_0_1_in_context.xdc] for cell 'design_1_i/IOT_0'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_13/design_1_IOT_0_1_in_context.xdc] for cell 'design_1_i/IOT_0'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_14/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_14/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
-Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_15/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
-Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-13328-amir/dcp_15/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_2/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_2/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_3/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_3/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_4/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_4/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_5/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_5/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_6/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_6/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_7/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_7/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_8/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_8/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_9/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_9/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_10/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_10/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_11/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_11/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_12/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_12/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_13/design_1_IOT_0_1_in_context.xdc] for cell 'design_1_i/IOT_0'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_13/design_1_IOT_0_1_in_context.xdc] for cell 'design_1_i/IOT_0'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_14/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_14/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_15/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
+Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/.Xil/Vivado-6228-amir/dcp_15/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s02_couplers/auto_pc'
 Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
@@ -163,17 +164,17 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 708.930 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 708.105 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -196,10 +197,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +243,7 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_1 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -262,10 +263,10 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,7 +278,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -301,7 +302,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -314,7 +315,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,25 +327,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -406,11 +407,11 @@ Report Instance Areas:
 |6     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   494|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 708.930 ; gain = 113.992
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 708.930 ; gain = 499.191
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 708.105 ; gain = 113.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 708.105 ; gain = 498.824
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -422,7 +423,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 72 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 711.094 ; gain = 407.141
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 710.508 ; gain = 406.707
 INFO: [Common 17-1381] The checkpoint 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/synth_1/design_1_wrapper.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 711.094 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 10:33:24 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 710.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 16:12:18 2017...

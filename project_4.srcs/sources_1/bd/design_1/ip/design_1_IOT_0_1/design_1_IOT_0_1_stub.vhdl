@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
--- Date        : Wed Jan 11 10:31:34 2017
+-- Date        : Fri Jan 20 16:11:37 2017
 -- Host        : amir running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/design_1_IOT_0_1_stub.vhdl
+--               D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/design_1_IOT_0_1_stub.vhdl
 -- Design      : design_1_IOT_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

@@ -35,3 +35,17 @@ void Motion_detection_off()
 {
 	IOT_mWriteReg (base,IOT_S00_AXI_SLV_REG0_OFFSET,0x00060000);
 }
+int Motion_detected()
+{
+    if(IOT_mReadReg (base,IOT_S00_AXI_SLV_REG1_OFFSET)==2 || IOT_mReadReg (base,IOT_S00_AXI_SLV_REG1_OFFSET)==3)
+    return 1;
+    else
+    return 0;  
+}
+int sound_detected()
+{
+        if(IOT_mReadReg (base,IOT_S00_AXI_SLV_REG1_OFFSET)==1 || IOT_mReadReg (base,IOT_S00_AXI_SLV_REG1_OFFSET)==3)
+        return 1;
+        else
+        return 0;  
+}

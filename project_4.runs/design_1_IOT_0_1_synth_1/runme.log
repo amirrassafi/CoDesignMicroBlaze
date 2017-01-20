@@ -14,42 +14,42 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4128 
+INFO: Helper process launched with PID 10260 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 337.242 ; gain = 127.523
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 337.340 ; gain = 127.254
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_IOT_0_1' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/synth/design_1_IOT_0_1.vhd:93]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'IOT_v1_0' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0.vhd:5' bound to instance 'U0' of component 'IOT_v1_0' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/synth/design_1_IOT_0_1.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'IOT_v1_0' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0.vhd:59]
+INFO: [Synth 8-3491] module 'IOT_v1_0' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0.vhd:5' bound to instance 'U0' of component 'IOT_v1_0' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/synth/design_1_IOT_0_1.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'IOT_v1_0' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0.vhd:59]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'IOT_v1_0_S00_AXI' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:5' bound to instance 'IOT_v1_0_S00_AXI_inst' of component 'IOT_v1_0_S00_AXI' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0.vhd:108]
-INFO: [Synth 8-638] synthesizing module 'IOT_v1_0_S00_AXI' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:96]
+INFO: [Synth 8-3491] module 'IOT_v1_0_S00_AXI' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:5' bound to instance 'IOT_v1_0_S00_AXI_inst' of component 'IOT_v1_0_S00_AXI' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'IOT_v1_0_S00_AXI' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:96]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:245]
-INFO: [Synth 8-226] default block is never used [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:375]
-INFO: [Synth 8-3491] module 'CMDCTRL' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:34' bound to instance 'iot' of component 'CMDCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:409]
-INFO: [Synth 8-638] synthesizing module 'CMDCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:51]
-INFO: [Synth 8-3491] module 'Motion_Detection' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Motion_Detection.vhd:11' bound to instance 'MotionDetector' of component 'Motion_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:81]
-INFO: [Synth 8-638] synthesizing module 'Motion_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Motion_Detection.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'Motion_Detection' (1#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Motion_Detection.vhd:18]
-INFO: [Synth 8-3491] module 'Sound_Detection' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Sound_Detection.vhd:34' bound to instance 'SoundDetector' of component 'Sound_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'Sound_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Sound_Detection.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Sound_Detection' (2#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Sound_Detection.vhd:40]
-INFO: [Synth 8-3491] module 'LightCTRL' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/LightCTRL.vhd:34' bound to instance 'lightController' of component 'LightCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'LightCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/LightCTRL.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'LightCTRL' (3#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/LightCTRL.vhd:40]
-INFO: [Synth 8-3491] module 'temp' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/temp.vhd:34' bound to instance 'TempController' of component 'temp' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'temp' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/temp.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'temp' (4#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/temp.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'CMDCTRL' (5#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/CMDCTRL.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'IOT_v1_0_S00_AXI' (6#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0_S00_AXI.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'IOT_v1_0' (7#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/hdl/IOT_v1_0.vhd:59]
+INFO: [Synth 8-226] default block is never used [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:245]
+INFO: [Synth 8-226] default block is never used [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:375]
+INFO: [Synth 8-3491] module 'CMDCTRL' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:34' bound to instance 'iot' of component 'CMDCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:409]
+INFO: [Synth 8-638] synthesizing module 'CMDCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:51]
+INFO: [Synth 8-3491] module 'Motion_Detection' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd:11' bound to instance 'MotionDetector' of component 'Motion_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Motion_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Motion_Detection' (1#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd:18]
+INFO: [Synth 8-3491] module 'Sound_Detection' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Sound_Detection.vhd:34' bound to instance 'SoundDetector' of component 'Sound_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'Sound_Detection' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Sound_Detection.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Sound_Detection' (2#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Sound_Detection.vhd:40]
+INFO: [Synth 8-3491] module 'LightCTRL' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/LightCTRL.vhd:34' bound to instance 'lightController' of component 'LightCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'LightCTRL' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/LightCTRL.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LightCTRL' (3#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/LightCTRL.vhd:40]
+INFO: [Synth 8-3491] module 'temp' declared at 'd:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/temp.vhd:34' bound to instance 'TempController' of component 'temp' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'temp' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/temp.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'temp' (4#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/temp.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'CMDCTRL' (5#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/CMDCTRL.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'IOT_v1_0_S00_AXI' (6#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'IOT_v1_0' (7#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'design_1_IOT_0_1' (8#1) [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/synth/design_1_IOT_0_1.vhd:93]
 WARNING: [Synth 8-3331] design CMDCTRL has unconnected port OP[15]
 WARNING: [Synth 8-3331] design CMDCTRL has unconnected port OP[14]
@@ -66,7 +66,7 @@ WARNING: [Synth 8-3331] design IOT_v1_0_S00_AXI has unconnected port S_AXI_ARPRO
 WARNING: [Synth 8-3331] design IOT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design IOT_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 375.500 ; gain = 165.781
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 375.574 ; gain = 165.488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -76,7 +76,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 375.500 ; gain = 165.781
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 375.574 ; gain = 165.488
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -88,34 +88,34 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 687.281 ; gain = 0.164
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 687.086 ; gain = 0.039
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/Motion_Detection.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd:60]
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "last_frame" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "T" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Light_EN" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Motion_EN" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/temp.vhd:64]
-WARNING: [Synth 8-327] inferring latch for variable 'H_reg' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/2711/src/temp.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/temp.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'H_reg' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/temp.vhd:63]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,6 +242,126 @@ INFO: [Synth 8-3886] merging instance 'U0/IOT_v1_0_S00_AXI_inst/axi_rresp_reg[0]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/IOT_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'U0/IOT_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/IOT_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/IOT_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[31]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[31] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[31]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[31] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[31] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[30]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[30] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[30]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[30] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[30] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[29]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[29] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[29]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[29] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[29] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[28]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[28] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[28]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[28] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[28] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[27]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[27] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[27]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[27] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[27] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[26]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[26] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[26]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[26] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[26] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[25]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[25] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[25]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[25] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[25] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[24]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[24] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[24]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[24] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[24] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[23]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[23] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[23]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[23] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[23] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[22]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[22] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[22]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[22] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[22] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[21]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[21] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[21]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[21] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[21] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[20]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[20] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[20]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[20] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[20] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[19]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[19] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[19]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[19] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[19] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[18]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[18] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[18]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[18] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[18] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[17]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[17] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[17]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[17] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[17] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[16]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[16] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[16]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[16] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[16] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[15]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[15] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[15]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[15] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[15] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[14]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[14] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[14]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[14] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[14] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[13]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[13] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[13]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[13] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[13] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[12]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[12] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[12]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[12] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[12] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[11]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[11] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[11]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[11] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[11] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[10]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[10] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[10]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[10] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[10] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[9]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[9] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[9]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[9] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[9] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[8]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[8] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[8]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[8] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[8] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[7]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[7] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[7]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[7] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[7] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[6]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[6] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[6]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[6] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[6] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[5]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[5] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[5]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[5] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[5] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[4]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[4] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[4]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[4] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[4] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[3]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[3] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[3]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[3] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[3] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[2]) is unused and will be removed from module design_1_IOT_0_1.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[2] with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[2]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net slv_reg1_reg[2] with 2nd driver pin 'GND' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net slv_reg1_reg[2] is connected to constant driver, other driver is ignored [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
 INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_IOT_0_1.
 INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_IOT_0_1.
 INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_IOT_0_1.
@@ -249,7 +369,7 @@ INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_araddr_reg
 INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_IOT_0_1.
 INFO: [Synth 8-3332] Sequential element (U0/IOT_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_IOT_0_1.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,10 +384,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -279,7 +399,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -303,20 +423,24 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net MotionDetected with 1st driver pin 'i_245/O' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Motion_Detection.vhd:21]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net MotionDetected with 2nd driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[1]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net SoundDetected with 1st driver pin 'U0/IOT_v1_0_S00_AXI_inst/slv_reg1_reg[0]/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/hdl/IOT_v1_0_S00_AXI.vhd:239]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net SoundDetected with 2nd driver pin 'U0/IOT_v1_0_S00_AXI_inst/iot/SoundDetector/DETECT_reg/Q' [d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ipshared/55c4/src/Sound_Detection.vhd:46]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|        2|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -328,25 +452,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -366,10 +490,10 @@ Report Cell Usage:
 |2     |LUT1   |    15|
 |3     |LUT2   |    39|
 |4     |LUT3   |    39|
-|5     |LUT4   |    65|
-|6     |LUT5   |    18|
-|7     |LUT6   |    67|
-|8     |FDRE   |   278|
+|5     |LUT4   |    61|
+|6     |LUT5   |    48|
+|7     |LUT6   |    39|
+|8     |FDRE   |   248|
 |9     |FDSE   |     2|
 |10    |LDC    |     1|
 |11    |LDCP   |     1|
@@ -379,20 +503,20 @@ Report Instance Areas:
 +------+--------------------------+-----------------+------+
 |      |Instance                  |Module           |Cells |
 +------+--------------------------+-----------------+------+
-|1     |top                       |                 |   552|
-|2     |  U0                      |IOT_v1_0         |   552|
-|3     |    IOT_v1_0_S00_AXI_inst |IOT_v1_0_S00_AXI |   547|
+|1     |top                       |                 |   520|
+|2     |  U0                      |IOT_v1_0         |   520|
+|3     |    IOT_v1_0_S00_AXI_inst |IOT_v1_0_S00_AXI |   515|
 |4     |      iot                 |CMDCTRL          |   321|
 |5     |        MotionDetector    |Motion_Detection |   181|
 |6     |        SoundDetector     |Sound_Detection  |     1|
 |7     |        TempController    |temp             |   124|
 +------+--------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 687.281 ; gain = 115.996
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 687.281 ; gain = 477.563
+Synthesis finished with 0 errors, 94 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 687.086 ; gain = 116.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 687.086 ; gain = 477.000
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -404,12 +528,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-54 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 30 Warnings, 94 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 687.281 ; gain = 427.777
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 687.086 ; gain = 427.883
 INFO: [Common 17-1381] The checkpoint 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/design_1_IOT_0_1_synth_1/design_1_IOT_0_1.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.srcs/sources_1/bd/design_1/ip/design_1_IOT_0_1/design_1_IOT_0_1.xci
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/Lesson/TERM7/FPGA/Szamani/Project/project_4/project_4.runs/design_1_IOT_0_1_synth_1/design_1_IOT_0_1.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 687.281 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 10:31:34 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 687.086 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 20 16:11:37 2017...

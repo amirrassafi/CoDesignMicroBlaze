@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1484118048">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1484916062">
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
@@ -75,6 +75,6 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_IOT_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_IOT_0_1"/>
 </GenRun>
