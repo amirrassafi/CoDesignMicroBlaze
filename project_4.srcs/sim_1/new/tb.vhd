@@ -106,6 +106,7 @@ architecture Behavioral of tb is
     
     process
         begin
+        wait for 10 us;
         -- a frame with all "11111111" pixel
         camera <= "11111111";
                      wait for 20 ns;
@@ -114,7 +115,9 @@ architecture Behavioral of tb is
                      wait for 20 ns;
                 end loop;
         camera <= "00000000";
-                    wait for 20 ns;      
+                    wait for 1000*20 ns;      
+                    
+            
          -- a frame with all "00000001" pixel     
         camera <= "11111111";
                      wait for 20 ns;
@@ -124,6 +127,29 @@ architecture Behavioral of tb is
                      end loop;
         camera <= "00000000";
                       wait for 20 ns;
+                      
+        -- a frame with all "11111111" pixel
+                      camera <= "11111111";
+                                   wait for 20 ns;
+                              for i in 0 to 1000 loop
+                                  camera <= "11111111";
+                                   wait for 20 ns;
+                              end loop;
+                      camera <= "00000000";
+                                  wait for 1000*20 ns;   
+          -- a frame with all "11111111" pixel
+                      camera <= "11111111";
+                                   wait for 20 ns;
+                              for i in 0 to 1000 loop
+                                  camera <= "11111111";
+                                   wait for 20 ns;
+                              end loop;
+                      camera <= "00000000";
+                                  wait for 1000*20 ns;                                   
+
+
+ 
+                      wait;
     end process;        
    
     sound<='0';            
